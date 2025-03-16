@@ -1,0 +1,77 @@
+.user-page {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1rem;
+  
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+  
+      .user-img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+      }
+  
+      .username {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+  
+      .stats {
+        display: flex;
+        gap: 1rem;
+        color: gray;
+      }
+    }
+  
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+  
+      .story-card {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+  
+        .story-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .load-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+  
+      .spinner {
+        animation: spin 1s linear infinite;
+        color: gray;
+      }
+  
+      .load-more-btn {
+        padding: 0.5rem 1rem;
+        background-color: #3b82f6;
+        color: white;
+        border-radius: 0.5rem;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background-color: #2563eb;
+        }
+      }
+    }
+  
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  }
+  

@@ -1,0 +1,54 @@
+.comment-container {
+    border-top: 1px solid #dbdbdb;
+    padding: 8px 12px;
+}
+
+.comment-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.emoji-wrapper {
+    position: relative;
+    order: 2; 
+}
+
+.emoji-icon {
+    width: 20px;
+    height: 20px;
+    color: gray;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.emoji-picker-react {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 10;
+}
+
+.comment-input {
+    flex: 1;
+    outline: none;
+    color: #262626;
+    padding: 6px 0;
+    font-size: 14px;
+    margin-left: 10px; 
+}
+
+.post-btn {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0095f6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; 
+}
+
+.post-btn.active {
+    display: inline-block; // מופיע רק כשיש טקסט
+}

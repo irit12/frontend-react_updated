@@ -1,0 +1,82 @@
+// .nav-bar {
+//     position: sticky;
+//     // position: fixed;
+//     // left: 0;
+//     top: 0;
+//     // width: 220px;
+//     // background-color: white; 
+//     // display: flex;
+//     // flex-direction: column;
+//     // padding: 20px;
+//     // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+//     font-family: Arial, sans-serif;
+//     // z-index: 1000;
+//     // grid-column: 1 / 2; 
+//     background-color: #f4f4f4; 
+//     padding: 10px;
+//     border-right: 0.5px solid #d3d3d3;
+//     height: 100vh; 
+// }
+
+.nav-bar {
+    position: fixed; /* משאיר את הסרגל במקום */
+    left: 0; /* ממקם אותו בצד שמאל */
+    top: 0;
+    width: 220px; /* רוחב קבוע כמו באינסטגרם */
+    background-color: white; /* רקע לבן */
+    // display: flex;
+    // flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* צל עדין */
+    height: 100vh; /* גובה מלא */
+    // z-index: 1000; /* מוודא שהסרגל יהיה מעל אלמנטים אחרים */
+    border-right: 1px solid #d3d3d3; /* קו הפרדה בצד ימין */
+}
+
+.nav-bar a {
+    text-decoration: none; 
+    color: black; 
+    padding: 10px 0;
+    font-size: 16px; 
+    font-weight: 300; 
+    display: flex; 
+    align-items: center; 
+    // gap: 5px; 
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #3498db; 
+}
+
+.nav-bar a.active {
+    font-weight: bold;
+    color: #0b0c0c; 
+}
+
+.nav-bar i {
+    font-size: 16px; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    // gap: 5px;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #3498db; 
+    border-radius: 5px;
+}
+

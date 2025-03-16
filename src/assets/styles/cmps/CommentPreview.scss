@@ -1,0 +1,39 @@
+.comment-preview {
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Align items vertically */
+        gap: 8px; /* Add space between the image and text */
+        flex-wrap: wrap; /* Allows wrapping if needed */
+      }
+      
+     .comment-txt {
+        font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #262626; 
+        word-wrap: break-word;
+        white-space: normal;
+      }
+
+      .user-img {
+        width: 32px; /* Instagram uses small profile images in comments */
+        height: 32px;
+        border-radius: 50%; /* Makes it circular */
+        object-fit: cover; /* Ensures the image fits properly */
+        margin-right: 8px; /* Adds spacing between the image and text */
+        border: 1px solid #ddd; /* Light border like Instagram */
+      }
+      
+      .user-name, .comment strong {
+        font-weight: 600; 
+      }
+      
+         
+      .comment .emoji {
+        font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", sans-serif;
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      
+}
